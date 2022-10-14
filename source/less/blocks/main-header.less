@@ -1,0 +1,116 @@
+.main-header {
+    width: 100%;
+    background-color: #083921;
+
+    &__wrapper {
+        width: 400px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+
+    &__wrapper-logo {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    &__logo-img {
+        fill: #ffffff;
+    }
+
+    &__login {
+        width: 60px;
+        height: 30px;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+        font-size: 14px;
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__item {
+        width: 100%;
+        min-height: 30px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &__item-text {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .main-header {
+        &__wrapper {
+            width: 768px;
+            padding: 20px 30px;
+
+            &-logo {
+                padding: 10px 80px 20px;
+            }
+        }
+
+        &__login {
+            width: 100px;
+            min-height: 30px;
+        }
+
+        &__item {
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-header {
+        position: relative;
+        background-image: url("../../img/jpg/header.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: 2;
+
+        &__wrapper {
+            width: 1200px;
+
+            &-logo {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            align-items: center;
+        }
+
+        &__item:not(:last-child) {
+            margin-bottom: 0px;
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}
