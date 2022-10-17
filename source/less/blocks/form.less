@@ -11,24 +11,40 @@
         margin: 0;
         margin-bottom: 20px;
         text-align: center;
-    }
-
-    &__input {
-        margin-bottom: 10px;
-        min-height: 30px;
         font-family: 'Oswald';
         font-size: 36px;
         line-height: 40px;
         margin-bottom: 20px;
-        border: 1px solid #e8e8e8;
+    }
+
+    &__input {
+        margin-bottom: 10px;
+        min-height: 45px;
+        border: 1px solid #cccccc;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
 
         &:last-child {
             margin-bottom: 0;
+        }
+
+        &:hover {
+            outline: 2px solid @color-main;
         }
     }
 
     &__button {
         margin-top: 20px;
+        min-height: 40px;
+        color: #ffffff;
+        background-color: @bg-color-main;
+        border: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
     }
 }
 
