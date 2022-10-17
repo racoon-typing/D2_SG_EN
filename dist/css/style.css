@@ -34,6 +34,8 @@
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000000;
 }
 .main-header__logo {
   font-weight: 700;
@@ -91,6 +93,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.main-header__item:hover {
+  background-color: #ffffff;
 }
 .main-header__item-text {
   font-weight: 700;
