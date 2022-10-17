@@ -453,5 +453,24 @@
 }
 .swiper-slide {
   padding: 10px 30px;
+  padding-bottom: 40px;
   box-sizing: border-box;
+}
+.image-slider__wrapper-item {
+  display: flex;
+}
+.image-slider__column-left {
+  width: 40%;
+}
+.image-slider__column-right {
+  width: 60%;
+}
+.image-slider__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.image-slider__text {
+  margin: 0;
 }
