@@ -230,6 +230,7 @@
 .benefit__wrapper {
   padding: 0 20px;
   padding-top: 40px;
+  padding-bottom: 60px;
 }
 .benefit__title {
   margin: 0;
@@ -246,12 +247,62 @@
   padding: 0;
   list-style-type: none;
   margin-top: 60px;
+  color: #ffffff;
 }
 .benefit__item {
   padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.benefit__item:last-child {
+  margin-bottom: 0;
+}
+.benefit__item:nth-child(1),
+.benefit__item:nth-child(4) {
+  background-color: #1877f2;
+}
+.benefit__item:nth-child(2),
+.benefit__item:nth-child(3) {
+  background-color: #1C1C1C;
 }
 @media (min-width: 768px) {
   .benefit__wrapper {
+    width: 768px;
+    padding: 20px 30px;
+  }
+}
+.instruction {
+  background-color: #e8e8e8;
+}
+.instruction__wrapper {
+  padding: 0 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.instruction__title {
+  margin: 0;
+  font-family: 'Oswald';
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.instruction__text {
+  margin: 0;
+  margin-bottom: 15px;
+}
+.instruction__button {
+  color: #ffffff;
+  background-color: #1877f2;
+  border: none;
+  padding: 10px 55px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .instruction__wrapper {
     width: 768px;
     padding: 20px 30px;
   }

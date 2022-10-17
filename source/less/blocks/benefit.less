@@ -2,6 +2,7 @@
     &__wrapper {
         padding: 0 20px;
         padding-top: 40px;
+        padding-bottom: 60px;
     }
 
     &__title {
@@ -21,10 +22,29 @@
         padding: 0;
         list-style-type: none;
         margin-top: 60px;
+        color: #ffffff;
     }
 
     &__item {
         padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(1),
+        &:nth-child(4) {
+            background-color: @bg-color-main;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            background-color: @bg-color-third;
+        }
+
+
     }
 
 }
