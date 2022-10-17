@@ -399,9 +399,16 @@
 .form__title {
   margin: 0;
   margin-bottom: 20px;
+  text-align: center;
 }
 .form__input {
   margin-bottom: 10px;
+  min-height: 30px;
+  font-family: 'Oswald';
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  border: 1px solid #e8e8e8;
 }
 .form__input:last-child {
   margin-bottom: 0;
