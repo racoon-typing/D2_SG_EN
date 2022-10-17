@@ -1,7 +1,42 @@
 .research {
     &__wrapper {
         padding: 0 20px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: 'Oswald';
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        margin: 0;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        margin-top: 30px;
+    }
+
+    &__item {
+        padding-left: 40px;
     }
 }
+
+@media (min-width: 768px) {
+    .research {
+        &__wrapper {
+            width: 768px;
+            padding: 20px 30px;
+        }
+
+    }
+}
+
+@media (min-width: 1200px) {}
