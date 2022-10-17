@@ -21,6 +21,11 @@
         line-height: 20px;
     }
 
+    &__wrapper-button {
+        display: flex;
+        align-items: center;
+    }
+
     &__button-buy {
         font-family: @second-font;
         font-style: normal;
@@ -36,9 +41,32 @@
     }
 
     &__button-nav {
-        width: 25px;
+        position: relative;
+        border: none;
+        width: 24px;
         height: 20px;
+        background-color: transparent;
+        margin-left: 20px;
     }
+
+    &__button-nav::before {
+        position: absolute;
+        content: url("../../img/icons/burger.svg");
+        width: 24px;
+        height: 20px;
+        top: 0;
+        left: 0;
+    }
+
+    &__button-nav-icon {
+        display: block;
+        width: 24px;
+        height: 16px;
+        background-image: url('/source/img/icons/burger.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }   
 
     &__list {
         margin: 0;

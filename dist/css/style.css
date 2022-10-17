@@ -10,6 +10,16 @@
   line-height: 18px;
   color: #444444;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .main-header {
   width: 100%;
   background-color: #e8e8e8;
@@ -30,6 +40,10 @@
   font-size: 20px;
   line-height: 20px;
 }
+.main-header__wrapper-button {
+  display: flex;
+  align-items: center;
+}
 .main-header__button-buy {
   font-family: 'Oswald';
   font-style: normal;
@@ -43,9 +57,30 @@
   border: none;
   padding: 10px 60px;
 }
-.main-header__main-header__button-nav-icon {
-  width: 25px;
+.main-header__button-nav {
+  position: relative;
+  border: none;
+  width: 24px;
   height: 20px;
+  background-color: transparent;
+  margin-left: 20px;
+}
+.main-header__button-nav::before {
+  position: absolute;
+  content: url("../../img/icons/burger.svg");
+  width: 24px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+.main-header__button-nav-icon {
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-image: url('/source/img/icons/burger.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 .main-header__list {
   margin: 0;
