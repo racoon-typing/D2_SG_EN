@@ -370,6 +370,7 @@
   padding-bottom: 40px;
 }
 .review__wrapper-bg {
+  position: relative;
   background-color: #e8e8e8;
   min-height: 200px;
 }
@@ -385,6 +386,9 @@
   margin: 0;
   text-align: center;
   margin-bottom: 10px;
+}
+.swiper-button-prev {
+  font-size: 25px;
 }
 @media (min-width: 768px) {
   .review__wrapper {
