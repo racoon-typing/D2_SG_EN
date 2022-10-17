@@ -85,6 +85,9 @@
   background-repeat: no-repeat;
   z-index: 1;
 }
+.main-header__nav--close {
+  display: none;
+}
 .main-header__list {
   margin: 0;
   padding: 0;
