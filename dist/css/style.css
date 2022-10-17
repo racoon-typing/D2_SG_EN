@@ -110,6 +110,7 @@
 @media (min-width: 768px) {
   .main-header__wrapper {
     width: 768px;
+    box-sizing: border-box;
     padding: 20px 30px;
   }
 }
@@ -120,6 +121,7 @@
 @media (min-width: 768px) {
   .main-footer__wrapper {
     width: 768px;
+    box-sizing: border-box;
     padding: 20px 30px;
   }
 }
