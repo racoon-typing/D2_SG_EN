@@ -1,0 +1,38 @@
+.form {
+    &__wrapper {
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    &__title {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__button {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .form {
+        &__wrapper {
+            width: 768px;
+            padding: 20px 30px;
+        }
+
+    }
+}
+
+@media (min-width: 1200px) {}

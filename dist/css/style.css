@@ -389,3 +389,29 @@
     padding: 20px 30px;
   }
 }
+.form__wrapper {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.form__title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+.form__input {
+  margin-bottom: 10px;
+}
+.form__input:last-child {
+  margin-bottom: 0;
+}
+.form__button {
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .form__wrapper {
+    width: 768px;
+    padding: 20px 30px;
+  }
+}
