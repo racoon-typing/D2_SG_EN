@@ -183,15 +183,11 @@
 .offer {
   position: relative;
   background-color: #e8e8e8;
-  padding-bottom: 135px;
 }
-.offer::before {
-  position: absolute;
-  content: url("../../img/icons/wave.svg");
+.offer__bg-image {
+  display: block;
   width: 100%;
   height: auto;
-  bottom: -5px;
-  left: 0;
 }
 .offer__wrapper {
   padding: 0 20px;
