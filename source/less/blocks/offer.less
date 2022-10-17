@@ -1,5 +1,4 @@
 .offer {
-    position: relative;
     background-color: #e8e8e8;
 
     &__bg-image {
@@ -19,24 +18,25 @@
         margin: 0;
         font-family: @second-font;
         font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 36px;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 44px;
         margin-bottom: 25px;
     }
 
     &__description {
         margin: 0;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 18px;
+        line-height: 24px;
         text-transform: uppercase;
-        // margin-bottom: 15px;
     }
 
     &__button {
-        background-color: #f0f2f5;
-        border: none;
+        color: @color-main;
+        // background-color: @bg-color-second;
+        border-color: transparent;
+        border: 1px solid @bg-color-second;
         padding: 10px 55px;
         font-weight: 400;
         font-size: 16px;
@@ -47,7 +47,7 @@
 }
 
 @media (min-width: 768px) {
-    .main-header {
+    .offer {
         &__wrapper {
             width: 768px;
             padding: 20px 30px;
