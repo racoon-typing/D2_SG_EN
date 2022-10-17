@@ -337,3 +337,54 @@
     padding: 20px 30px;
   }
 }
+.guarantees__wrapper {
+  padding: 0 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.guarantees__title {
+  margin: 0;
+  text-align: center;
+  font-family: 'Oswald';
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.guarantees__text {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .guarantees__wrapper {
+    width: 768px;
+    padding: 20px 30px;
+  }
+}
+.review__wrapper {
+  padding: 0 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.review__wrapper-bg {
+  background-color: #e8e8e8;
+}
+.review__title {
+  margin: 0;
+  text-align: center;
+  font-family: 'Oswald';
+  font-size: 36px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.review__text {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .review__wrapper {
+    width: 768px;
+    padding: 20px 30px;
+  }
+}
