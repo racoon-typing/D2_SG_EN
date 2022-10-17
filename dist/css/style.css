@@ -451,3 +451,7 @@
 .image-slider .swiper__wrapper-item {
   width: 100%;
 }
+.swiper-slide {
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
