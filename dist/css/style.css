@@ -387,10 +387,6 @@
   text-align: center;
   margin-bottom: 10px;
 }
-.swiper-button-prev,
-.swiper-button-next {
-  --swiper-navigation-size: 30px;
-}
 @media (min-width: 768px) {
   .review__wrapper {
     width: 768px;
@@ -443,4 +439,15 @@
     width: 768px;
     padding: 20px 30px;
   }
+}
+.image-slider .swiper-button-prev,
+.image-slider .swiper-button-next {
+  --swiper-navigation-size: 30px;
+}
+.image-slider .swiper__slide {
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+.image-slider .swiper__wrapper-item {
+  width: 100%;
 }
