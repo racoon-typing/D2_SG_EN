@@ -74,6 +74,7 @@
   height: 20px;
   top: 0;
   left: 0;
+  cursor: pointer;
 }
 .main-header__button-nav-icon {
   display: block;
@@ -116,19 +117,14 @@
   width: 100%;
   flex-grow: 1;
 }
-.main-container__wrapper {
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 @media (min-width: 768px) {
-  .main-container__wrapper {
+  .main-footer__wrapper {
     width: 768px;
     padding: 20px 30px;
   }
 }
 @media (min-width: 1200px) {
-  .main-container__wrapper {
+  .main-footer__wrapper {
     width: 1200px;
     padding: 40px 110px;
   }
@@ -150,7 +146,7 @@
     padding: 20px 30px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .main-footer__wrapper {
     width: 1200px;
     padding: 40px 110px;
@@ -186,5 +182,51 @@
 @media (min-width: 1200px) {
   .social-list {
     padding: 30px 0;
+  }
+}
+.offer {
+  position: relative;
+  background-color: #e8e8e8;
+  padding-bottom: 135px;
+}
+.offer::before {
+  position: absolute;
+  content: url("../../img/icons/wave.svg");
+  width: 100%;
+  height: auto;
+  bottom: -5px;
+  left: 0;
+}
+.offer__wrapper {
+  padding: 0 20px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+.offer__title {
+  margin: 0;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  margin-bottom: 25px;
+}
+.offer__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.offer__button {
+  background-color: #f0f2f5;
+  border: none;
+}
+@media (min-width: 768px) {
+  .main-header__wrapper {
+    width: 768px;
+    padding: 20px 30px;
   }
 }

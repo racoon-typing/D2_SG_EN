@@ -1,0 +1,57 @@
+.offer {
+    position: relative;
+    background-color: #e8e8e8;
+    padding-bottom: 135px;
+
+    &::before {
+        position: absolute;
+        content: url("../../img/icons/wave.svg");
+        width: 100%;
+        height: auto;
+        bottom: -5px;
+        left: 0;
+    }
+
+    &__wrapper {
+        padding: 0 20px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin: 0;
+        font-family: @second-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 25px;
+    }
+
+    &__description {
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    &__button {
+        background-color: #f0f2f5;
+        border: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-header {
+        &__wrapper {
+            width: 768px;
+            padding: 20px 30px;
+        }
+
+    }
+}
+
+@media (min-width: 1200px) {}
