@@ -363,11 +363,12 @@
 }
 .review__wrapper {
   padding: 0 20px;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 .review__wrapper-bg {
   background-color: #e8e8e8;
+  min-height: 200px;
 }
 .review__title {
   margin: 0;
