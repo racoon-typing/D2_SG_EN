@@ -130,7 +130,9 @@
 }
 .social-item__icon {
   color: #fff;
-  stroke: #ffffff;
+}
+.social-link {
+  margin-left: 5px;
 }
 @media (min-width: 768px) {
   .social-list {
