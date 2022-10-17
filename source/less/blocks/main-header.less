@@ -10,13 +10,29 @@
 
     &__wrapper-logo {
         display: flex;
-        justify-content: space-between
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
     }
 
     &__logo {
         font-weight: 700;
         font-size: 20px;
         line-height: 20px;
+    }
+
+    &__button-buy {
+        font-family: @second-font;
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ffffff;
+        background-color: @bg-color-main;
+        border: none;
+        padding: 10px 60px;
     }
 
     &__list {
@@ -49,51 +65,9 @@
         &__wrapper {
             width: 768px;
             padding: 20px 30px;
-
-            &-logo {
-                padding: 10px 80px 20px;
-            }
         }
 
-        &__login {
-            width: 100px;
-            min-height: 30px;
-        }
-
-        &__item {
-            font-size: 18px;
-            line-height: 24px;
-        }
     }
 }
 
-@media (min-width: 1200px) {
-    .main-header {
-        position: relative;
-        background-image: url("../../img/jpg/header.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        z-index: 2;
-
-        &__wrapper {
-            width: 1200px;
-
-            &-logo {
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-        }
-
-        &__list {
-            display: flex;
-            align-items: center;
-        }
-
-        &__item:not(:last-child) {
-            margin-bottom: 0px;
-            font-size: 20px;
-            line-height: 30px;
-        }
-    }
-}
+@media (min-width: 1200px) {}
