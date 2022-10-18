@@ -61,6 +61,17 @@
         left: 0;
     }
 
+    &__button-nav--cross {
+        position: relative;
+        border: none;
+        width: 24px;
+        height: 20px;
+        background-color: transparent;
+        margin-left: 20px;
+        cursor: pointer;
+        padding: 0;
+    }
+
     &__button-nav--cross::before,
     &__button-nav--cross::after {
         position: absolute;
@@ -72,13 +83,13 @@
 
     &__button-nav--cross::before {
         rotate: -45deg;
-        top: 0;
+        top: 8;
         left: 0;
     }
 
     &__button-nav--cross::after {
         rotate: 45deg;
-        top: 0;
+        top: 8;
         right: 0;
     }
 

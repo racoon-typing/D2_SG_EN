@@ -8,7 +8,11 @@ if (buttonNav) {
 
         if (navNode.classList.contains('main-header__nav--open')) {
             console.log('есть');
-            buttonNav.classList.add('button-nav--cross');
+            buttonNav.classList.remove('main-header__button-nav');
+            buttonNav.classList.add('main-header__button-nav--cross');
+        } else {
+            buttonNav.classList.add('main-header__button-nav');
+            buttonNav.classList.remove('main-header__button-nav--cross');
         }
     });
 }
