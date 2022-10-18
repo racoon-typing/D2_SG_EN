@@ -20,7 +20,8 @@ export const path = {
     },
     watch: {
         html: `${srcFolder}/*.html`,
-        less: `${srcFolder}/**/*.less`
+        less: `${srcFolder}/**/*.less`,
+        js: `${srcFolder}/js/*.js`
     },
     clean: buildFolder,
     buildFolder: buildFolder,

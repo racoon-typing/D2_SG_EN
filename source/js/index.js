@@ -1,14 +1,18 @@
-let buttonNav = document.querySelector('main-header__button-nav');
-let navNode = document.querySelector('main-header__nav');
+let buttonNav = document.querySelector('.main-header__button-nav');
+let navNode = document.querySelector('.main-header__nav');
 
-console.log(buttonNav);
-
-// if (buttonNav) {
+if (buttonNav) {
     buttonNav.addEventListener('click', function () {
-        console.log(клик);
         navNode.classList.toggle('main-header__nav--close');
+        navNode.classList.toggle('main-header__nav--open');
     });
-// }
+
+    if (navNode.classList.contains('main-header__nav--open')) {
+        console.log('есть');
+    }
+}
+
+
 
 // Инициализируем слайдер 
 new Swiper('.image-slider', {
