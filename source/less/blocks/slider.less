@@ -19,7 +19,8 @@
 
 .swiper-slide {
     padding: 10px 30px;
-    padding-bottom: 40px;
+    padding-bottom: 50px;
+    padding-top: 30px;
     box-sizing: border-box;
 }
 
@@ -29,14 +30,28 @@
         flex-direction: column;
     }
 
+    &__column-left {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
     &__title {
         margin: 0;
         margin-bottom: 10px;
         font-size: 16px;
         line-height: 20px;
+        text-align: center;
     }
 
     &__text {
         margin: 0;
+        text-align: center;
     }
 }
