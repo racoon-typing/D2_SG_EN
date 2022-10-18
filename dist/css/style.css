@@ -362,6 +362,18 @@
 .research__item {
   padding-left: 40px;
 }
+.research__item-top-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+.research__item-number {
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.research__item-title {
+  margin: 0;
+}
 @media (min-width: 768px) {
   .research__wrapper {
     width: 768px;
