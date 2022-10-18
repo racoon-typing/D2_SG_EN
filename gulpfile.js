@@ -14,15 +14,16 @@ import { plugins } from "./gulp/config/plugins.js";
 import { server } from "./gulp/tasks/server.js";
 import { styles } from './gulp/tasks/less.js';
 import { copy } from './gulp/tasks/copy.js';
-import { copyJs } from './gulp/tasks/js.js';
+import { js } from './gulp/tasks/js.js';
 
 // Наблюдатель за изменениями в файлах
 function watcher() {
-    gulp.watch(app.path.watch.html, html);
-    gulp.watch(app.path.watch.less, styles);
+    gulp.watch(path.watch.html, html);
+    gulp.watch(path.watch.less, styles);
+    // gulp.watch(path.watch.js, js);
 }
 
-const mainTasks = gulp.parallel(copy, copyJs, html, styles);
+const mainTasks = gulp.parallel(copy, js, html, styles);
 
 // Сценарий выполнения
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
