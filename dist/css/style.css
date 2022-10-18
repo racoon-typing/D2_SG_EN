@@ -66,6 +66,7 @@
   height: 20px;
   background-color: transparent;
   margin-left: 20px;
+  cursor: pointer;
 }
 .main-header__button-nav::before {
   position: absolute;
@@ -74,7 +75,24 @@
   height: 20px;
   top: 0;
   left: 0;
-  cursor: pointer;
+}
+.main-header__button-nav--cross::before,
+.main-header__button-nav--cross::after {
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+}
+.main-header__button-nav--cross::before {
+  rotate: -45deg;
+  top: 0;
+  left: 0;
+}
+.main-header__button-nav--cross::after {
+  rotate: 45deg;
+  top: 0;
+  right: 0;
 }
 .main-header__button-nav-icon {
   display: block;

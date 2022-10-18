@@ -5,12 +5,14 @@ if (buttonNav) {
     buttonNav.addEventListener('click', function () {
         navNode.classList.toggle('main-header__nav--close');
         navNode.classList.toggle('main-header__nav--open');
-    });
 
-    if (navNode.classList.contains('main-header__nav--open')) {
-        console.log('есть');
-    }
+        if (navNode.classList.contains('main-header__nav--open')) {
+            console.log('есть');
+            buttonNav.classList.add('button-nav--cross');
+        }
+    });
 }
+
 
 
 
