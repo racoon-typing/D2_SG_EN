@@ -5,22 +5,32 @@
         padding-bottom: 60px;
     }
 
-    &__img {
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__item {
         width: 33%;
 
-        &--1 {
-            width: 100px;
-            height: 100px;
-        }
+        &-img {
+            width: 100%;
 
-        &--2 {
-            width: 140px;
-            height: 100px;
-        }
+            &--1 {
+                width: 80%;
+            }
 
-        &--3 {
-            width: 100px;
-            height: 100px;
+            &--2 {
+                width: 90%;
+            }
+
+            &--3 {
+                width: 80%;
+            }
         }
     }
 
