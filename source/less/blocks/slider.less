@@ -1,43 +1,17 @@
 // Слайдер
-
 .image-slider {
     box-sizing: border-box;
     width: 100%;
     overflow: hidden;
     position: relative;
-}
-
-.image-slider .swiper {
-
-    &-button-prev,
-    &-button-next {
-        --swiper-navigation-size: 30px;
-    }
 
     &__slide {
         padding: 10px 30px;
+        padding-bottom: 50px;
+        padding-top: 30px;
         box-sizing: border-box;
-
     }
 
-    &__wrapper-item {
-        width: 100%;
-    }
-
-    &-pagination-bullet {
-        width: 10px;
-        height: 10px;
-    }
-}
-
-.swiper-slide {
-    padding: 10px 30px;
-    padding-bottom: 50px;
-    padding-top: 30px;
-    box-sizing: border-box;
-}
-
-.image-slider {
     &__wrapper-item {
         display: flex;
         flex-direction: column;
@@ -66,5 +40,21 @@
     &__text {
         margin: 0;
         text-align: center;
+    }
+}
+
+.swiper {
+    &-button-prev,
+    &-button-next {
+        --swiper-navigation-size: 30px;
+    }
+
+    &__wrapper-item {
+        width: 100%;
+    }
+
+    &-pagination-bullet {
+        width: 10px;
+        height: 10px;
     }
 }
