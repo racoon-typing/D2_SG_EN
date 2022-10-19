@@ -1,5 +1,6 @@
 import gulp from "gulp";
 import { path } from "./gulp/config/path.js";
+import { plugins } from "./gulp/config/plugins.js";
 
 global.app = {
     path: path,
@@ -10,7 +11,6 @@ global.app = {
 // Импорт задач
 import { reset } from "./gulp/tasks/reset.js";
 import { html } from "./gulp/tasks/html.js";
-import { plugins } from "./gulp/config/plugins.js";
 import { server } from "./gulp/tasks/server.js";
 import { styles } from './gulp/tasks/less.js';
 import { copy } from './gulp/tasks/copy.js';
