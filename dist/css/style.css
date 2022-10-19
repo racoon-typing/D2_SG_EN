@@ -594,6 +594,10 @@
 .image-slider .swiper__wrapper-item {
   width: 100%;
 }
+.image-slider .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+}
 .swiper-slide {
   padding: 10px 30px;
   padding-bottom: 50px;
