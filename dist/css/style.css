@@ -441,6 +441,25 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.guarantees__img {
+  width: 33%;
+}
+.guarantees__img--1 {
+  width: 100px;
+  height: 100px;
+}
+.guarantees__img--2 {
+  width: 140px;
+  height: 100px;
+}
+.guarantees__img--3 {
+  width: 100px;
+  height: 100px;
+}
+.guarantees__img-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 .guarantees__title {
   margin: 0;
   text-align: center;
