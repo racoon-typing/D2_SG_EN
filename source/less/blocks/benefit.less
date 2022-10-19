@@ -15,20 +15,40 @@
 
     &__text {
         margin: 0;
+        font-size: 18px;
+        line-height: 26px;
     }
 
     &__list {
         margin: 0;
         padding: 0;
         list-style-type: none;
-        margin-top: 60px;
+        margin-top: 50px;
         color: #ffffff;
     }
 
     &__item {
-        padding: 10px;
+        padding: 20px 10px;
         margin-bottom: 10px;
         border-radius: 5px;
+
+        &-img {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        &-title {
+            margin: 0;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 10px;
+        }
+
+        &-text {
+            margin: 0;
+            font-size: 14px;
+            line-height: 18px;
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -43,8 +63,6 @@
         &:nth-child(3) {
             background-color: @bg-color-third;
         }
-
-
     }
 
 }

@@ -62,7 +62,7 @@
   letter-spacing: 1px;
 }
 .main-header__button-buy:hover {
-  color: #000000;
+  color: #1877f2;
   background-color: #ffffff;
 }
 .main-header__button-nav {
@@ -244,7 +244,7 @@
   margin: 0;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 26px;
   text-transform: uppercase;
 }
 .offer__img {
@@ -299,18 +299,35 @@
 }
 .benefit__text {
   margin: 0;
+  font-size: 18px;
+  line-height: 26px;
 }
 .benefit__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  margin-top: 60px;
+  margin-top: 50px;
   color: #ffffff;
 }
 .benefit__item {
-  padding: 10px;
+  padding: 20px 10px;
   margin-bottom: 10px;
   border-radius: 5px;
+}
+.benefit__item-img {
+  display: block;
+  margin-bottom: 15px;
+}
+.benefit__item-title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+.benefit__item-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
 }
 .benefit__item:last-child {
   margin-bottom: 0;
@@ -379,6 +396,8 @@
 }
 .research__text {
   margin: 0;
+  font-size: 18px;
+  line-height: 26px;
 }
 .research__list {
   margin: 0;
@@ -393,17 +412,23 @@
 .research__item-top-wrapper {
   display: flex;
   align-items: flex-start;
+  margin-bottom: 10px;
 }
 .research__item-number {
   font-size: 17px;
   font-weight: 700;
   margin-right: 10px;
+  margin-top: 2px;
 }
 .research__item-title {
   margin: 0;
+  font-size: 16px;
+  line-height: 24px;
 }
 .research__item-text {
   margin: 0;
+  font-size: 14px;
+  line-height: 18px;
 }
 @media (min-width: 768px) {
   .research__wrapper {
@@ -428,6 +453,8 @@
   margin: 0;
   text-align: center;
   margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 26px;
 }
 @media (min-width: 768px) {
   .guarantees__wrapper {
