@@ -317,6 +317,8 @@
 .benefit__item-img {
   display: block;
   margin-bottom: 15px;
+  width: 64px;
+  height: 64px;
 }
 .benefit__item-title {
   margin: 0;
