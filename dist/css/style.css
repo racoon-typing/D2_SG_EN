@@ -246,11 +246,13 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .offer__img {
   display: block;
-  width: 170px;
+  width: 100%;
   height: auto;
+  margin: 0 auto;
   animation-duration: 3s;
   animation-name: slidein;
 }
@@ -273,7 +275,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin-bottom: 60px;
 }
 .offer__button:hover {
   background-color: #ffffff;
