@@ -617,7 +617,9 @@
 }
 .compound__item-img {
   display: block;
+  margin: 0 auto;
   margin-bottom: 10px;
+  border-radius: 50%;
 }
 .compound__item-text {
   margin: 0;
