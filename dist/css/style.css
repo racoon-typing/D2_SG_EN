@@ -255,16 +255,14 @@
   margin: 0 auto;
   margin-top: 60px;
   animation-duration: 3s;
-  animation-name: slidein;
+  animation-name: show;
 }
-@keyframes slidein {
-  from {
-    margin-left: 110%;
-    width: 170px;
+@keyframes show {
+  0% {
+    opacity: 0;
   }
-  to {
-    margin-left: 0%;
-    width: 170px;
+  100% {
+    opacity: 1;
   }
 }
 .offer__button {
