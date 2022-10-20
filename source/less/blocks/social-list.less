@@ -22,23 +22,32 @@
         }
     }
 
-}
-
-
-
-// .social-item__icon {
-//     color: #fff;
-// }
-
-.social__link {
-    margin-left: 5px;
+    &__link {
+        margin-left: 5px;
+    }
 }
 
 
 @media (min-width: 768px) {
-    .social__list {
+    .social {
+        &__list {
         justify-content: space-around;
         padding: 20px 0;
+        }
+
+        &__item {
+            &-icon {
+                color: #fff;
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        &__link {
+            font-size: 20px;
+            line-height: 24px;
+            margin-left: 10px;
+        }
     }
 }
 
