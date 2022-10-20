@@ -723,7 +723,7 @@
 }
 @media (min-width: 768px) {
   .review__wrapper {
-    max-width: 700px;
+    max-width: 750px;
     padding: 80px 30px;
     margin: 0 auto;
   }
@@ -825,6 +825,36 @@
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
+}
+@media (min-width: 768px) {
+  .image-slider__wrapper-item {
+    flex-direction: row;
+  }
+  .image-slider__column-left {
+    margin-bottom: 0;
+    width: 305px;
+  }
+  .image-slider__img {
+    width: 200px;
+    height: 200px;
+  }
+  .image-slider__column-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .image-slider__title {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .image-slider__text {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+  }
+  .image-slider__slide {
+    padding: 80px 40px;
+  }
 }
 .compound {
   background-color: #e8e8e8;
