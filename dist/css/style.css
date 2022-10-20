@@ -152,6 +152,14 @@
     box-sizing: border-box;
     padding: 20px 30px;
   }
+  .main-header__logo {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .main-header__button-buy {
+    font-size: 18px;
+    line-height: 24px;
+  }
   .main-header__nav--close {
     display: block;
   }
@@ -266,7 +274,7 @@
 }
 .offer__img {
   display: block;
-  width: 100%;
+  width: 350px;
   height: auto;
   margin: 0 auto;
   margin-top: 60px;
@@ -298,8 +306,10 @@
 @media (min-width: 768px) {
   .offer__wrapper {
     display: flex;
+    justify-content: center;
     max-width: 1200px;
     padding: 20px 30px;
+    padding-top: 40px;
   }
   .offer__column-left {
     width: 350px;
@@ -313,6 +323,12 @@
     width: 350px;
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 25px;
+  }
+  .offer__button {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 15px 80px;
   }
   .offer__column-right {
     display: flex;
@@ -321,6 +337,8 @@
   }
   .offer__img {
     margin-top: 0;
+    width: 400px;
+    height: auto;
   }
 }
 .benefit__wrapper {
@@ -385,8 +403,38 @@
 }
 @media (min-width: 768px) {
   .benefit__wrapper {
-    width: 768px;
+    max-width: 1200px;
     padding: 20px 30px;
+  }
+  .benefit__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .benefit__text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .benefit__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .benefit__item {
+    padding: 30px 20px;
+    margin-bottom: 0;
+  }
+  .benefit__item-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+  }
+  .benefit__item-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .benefit__item-text {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 .instruction {

@@ -75,10 +75,46 @@
 @media (min-width: 768px) {
     .benefit {
         &__wrapper {
-            width: 768px;
+            max-width: 1200px;
             padding: 20px 30px;
         }
 
+        &__title {
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        &__text {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        &__item {
+            padding: 30px 20px;
+            margin-bottom: 0;
+
+            &-img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 25px;
+            }
+
+            &-title {
+                font-size: 24px;
+                line-height: 28px;
+            }
+
+            &-text {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
     }
 }
 
