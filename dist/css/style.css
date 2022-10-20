@@ -26,6 +26,7 @@
 }
 .main-header__wrapper {
   box-sizing: border-box;
+  max-width: 500px;
   margin: 0 auto;
   padding: 10px 20px;
 }
@@ -168,6 +169,7 @@
   background-color: #1877f2;
 }
 .main-footer__wrapper {
+  max-width: 500px;
   box-sizing: border-box;
   margin: 0 auto;
   color: #ffffff;
@@ -226,6 +228,8 @@
   height: auto;
 }
 .offer__wrapper {
+  box-sizing: border-box;
+  max-width: 500px;
   padding: 0 20px;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -286,6 +290,9 @@
   }
 }
 .benefit__wrapper {
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 0 20px;
   padding-top: 40px;
   padding-bottom: 60px;
@@ -352,6 +359,9 @@
   background-color: #e8e8e8;
 }
 .instruction__wrapper {
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 0 20px;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -385,6 +395,9 @@
   }
 }
 .research__wrapper {
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 0 20px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -478,6 +491,9 @@
   }
 }
 .guarantees__wrapper {
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 0 20px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -543,6 +559,9 @@
   }
 }
 .review__wrapper {
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 0 20px;
   padding-top: 20px;
   padding-bottom: 40px;
@@ -572,6 +591,9 @@
   }
 }
 .form__wrapper {
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 0 30px;
   display: flex;
   flex-direction: column;
@@ -670,6 +692,9 @@
   background-color: #e8e8e8;
 }
 .compound__wrapper {
+  box-sizing: border-box;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 0 20px;
   padding-top: 40px;
   padding-bottom: 40px;
