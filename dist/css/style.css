@@ -723,8 +723,9 @@
 }
 @media (min-width: 768px) {
   .review__wrapper {
-    width: 700px;
+    max-width: 700px;
     padding: 80px 30px;
+    margin: 0 auto;
   }
 }
 .form__wrapper {
