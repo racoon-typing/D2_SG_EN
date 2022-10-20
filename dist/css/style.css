@@ -426,6 +426,30 @@
   background-repeat: no-repeat;
   z-index: 2;
 }
+.research__item:nth-child(2)::before {
+  background-image: url('../../img/content-photo/icons/6.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.research__item:nth-child(3)::before {
+  background-image: url('../../img/content-photo/icons/8.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.research__item:nth-child(4)::before {
+  background-image: url('../../img/content-photo/icons/9.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.research__item:nth-child(5)::before {
+  background-image: url('../../img/content-photo/icons/10.png');
+  background-position: left;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
 .research__item-top-wrapper {
   display: flex;
   align-items: flex-start;
