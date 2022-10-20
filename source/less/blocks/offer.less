@@ -75,8 +75,35 @@
 @media (min-width: 768px) {
     .offer {
         &__wrapper {
-            width: 768px;
+            display: flex;
+            max-width: 1200px;
             padding: 20px 30px;
+        }
+
+        &__column-left {
+            width: 350px;
+        }
+
+        &__title {
+            width: 350px;
+            font-size: 60px;
+            line-height: 60px;
+        }
+
+        &__description {
+            width: 350px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        &__column-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__img {
+            margin-top: 0;
         }
 
     }

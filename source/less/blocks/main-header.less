@@ -147,11 +147,25 @@
 @media (min-width: 768px) {
     .main-header {
         &__wrapper {
-            width: 768px;
+            max-width: 1200px;
             box-sizing: border-box;
             padding: 20px 30px;
         }
 
+        &__nav--close {
+            display: block;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #000000;
+        }
+
+        &__item {
+            width: 160px;
+            border: none;
+        }
     }
 }
 
