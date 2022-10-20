@@ -328,7 +328,7 @@
   .offer__button {
     font-size: 18px;
     line-height: 24px;
-    padding: 15px 80px;
+    padding: 14px 80px;
   }
   .offer__column-right {
     display: flex;
@@ -404,7 +404,8 @@
 @media (min-width: 768px) {
   .benefit__wrapper {
     max-width: 1200px;
-    padding: 20px 30px;
+    padding: 40px 30px;
+    padding-bottom: 80px;
   }
   .benefit__title {
     font-size: 48px;
@@ -472,8 +473,21 @@
 }
 @media (min-width: 768px) {
   .instruction__wrapper {
-    width: 768px;
-    padding: 20px 30px;
+    max-width: 1200px;
+    padding: 80px 30px;
+  }
+  .instruction__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .instruction__text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .instruction__button {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 14px 80px;
   }
 }
 .research__wrapper {
@@ -568,8 +582,34 @@
 }
 @media (min-width: 768px) {
   .research__wrapper {
-    width: 768px;
-    padding: 20px 30px;
+    max-width: 1200px;
+    padding: 80px 30px;
+  }
+  .research__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .research__text {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .research__item {
+    padding-left: 80px;
+  }
+  .research__item-top-wrapper {
+    margin-bottom: 15px;
+  }
+  .research__item-number {
+    font-size: 22px;
+    margin-top: 4px;
+  }
+  .research__item-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .research__item-text {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 .guarantees__wrapper {
