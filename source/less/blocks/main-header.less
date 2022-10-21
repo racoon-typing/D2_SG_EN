@@ -166,6 +166,10 @@
             line-height: 24px;
         }
 
+        &__button-nav {
+            display: none;
+        }
+
         &__nav--close {
             display: block;
         }
@@ -186,8 +190,34 @@
 @media (min-width: 1200px) {
     .main-header {
         &__wrapper {
-            width: 1200px;
+            position: relative;
+            max-width: 1440px;
             padding: 40px 110px;
+        }
+
+        &__wrapper-logo {
+            min-height: 67px;
+            border: none;
+        }
+
+        &__nav {
+            position: absolute;
+            top: 41px;
+            left: 300px
+        }
+
+        &__list {
+            border: none;
+        }
+
+        &__item {
+            width: 140px;
+            margin-right: 10px;
+            border-bottom: 1px solid #000000;
+        }
+
+        &__item:last-child {
+            margin-right: 0;
         }
     }
 }
