@@ -1,5 +1,4 @@
 import * as nodePath from 'path';
-import { video } from '../tasks/video';
 const rootFolder = nodePath.basename(nodePath.resolve());
 
 const buildFolder = './dist';

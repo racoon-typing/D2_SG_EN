@@ -486,6 +486,10 @@
   margin: 0;
   margin-bottom: 15px;
 }
+.instruction__video {
+  width: 100%;
+  height: auto;
+}
 .instruction__button {
   color: #ffffff;
   background-color: #1877f2;
