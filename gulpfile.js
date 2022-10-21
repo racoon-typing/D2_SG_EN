@@ -15,6 +15,8 @@ import { server } from "./gulp/tasks/server.js";
 import { styles } from './gulp/tasks/less.js';
 import { copy } from './gulp/tasks/copy.js';
 import { js } from './gulp/tasks/js.js';
+import { video } from './gulp/tasks/video.js';
+
 
 // Наблюдатель за изменениями в файлах
 function watcher() {
@@ -23,7 +25,7 @@ function watcher() {
     gulp.watch(path.watch.js, js);
 }
 
-const mainTasks = gulp.parallel(copy, js, html, styles);
+const mainTasks = gulp.parallel(copy, video, js, html, styles);
 
 // Сценарий выполнения
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));

@@ -1,4 +1,5 @@
 import * as nodePath from 'path';
+import { video } from '../tasks/video';
 const rootFolder = nodePath.basename(nodePath.resolve());
 
 const buildFolder = './dist';
@@ -9,14 +10,16 @@ export const path = {
         css: `${buildFolder}/css/`,
         html: `${buildFolder}/`,
         img: `${buildFolder}/img/`,
-        js: `${buildFolder}/`
+        js: `${buildFolder}/`,
+        video: `${buildFolder}/video`
 
     },
     src: {
         less: `${srcFolder}/less/style.less`,
         html: `${srcFolder}/*.html`,
         img: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg}`,
-        js: `${srcFolder}/**/*.js`
+        js: `${srcFolder}/**/*.js`,
+        video: `${srcFolder}/video/*.mp4`
     },
     watch: {
         html: `${srcFolder}/*.html`,
