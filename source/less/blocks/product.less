@@ -97,11 +97,36 @@
 @media (min-width: 1200px) {
     .product {
         &__wrapper {
-            display: flex;
-            justify-content: center;
-            max-width: 1200px;
-            padding: 20px 30px;
-            padding-top: 70px;
+            padding: 0;
+
+            &--second {
+                border: none;
+                padding: 0;
+                background-image: url("../img/content-photo/bg-image-4.jpg");
+                width: 400px;
+                height: 400px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &__img {
+            display: none;
+            width: 360px;
+            height: 360px;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__text {
+            display: none;
+            
+            &-date {
+                display: none;
+            }
         }
     }
 }
