@@ -1350,17 +1350,26 @@
                     Order form
                 </h2>
 
-                <div class="form__container-input">
-                    <input id="name1" name="name" type="text" class="form__input form__input--name" placeholder="Name:"
-                        required>
-    
-                    <input id="phone1" name="phone" type="tel" class="form__input form__input--phone"
-                        placeholder="(+502) 2338 7896" autocomplete="off" data-intl-tel-input-id="0" required>
-                </div>
+                <form id="form2" action="lemon.php?p={p}" method="POST" class="wv_order-form">
+                    <div class="form__container-input">
+                        <input id="name1" name="name" type="text" class="form__input form__input--name" placeholder="Name:"
+                            required>
+        
+                        <input id="phone1" name="phone" type="tel" class="form__input form__input--phone"
+                            placeholder="0812-345-678" autocomplete="off" data-intl-tel-input-id="0" required>
+                    </div>
 
-                <button class="form__button">
-                    buy
-                </button>
+                    <!-- Скрытые поля -->
+                    <input type='hidden' name='sub1' value="{subid}">
+                    <input type='hidden' name='sub2' value="{p}">
+                    <input type='hidden' name='sub3' value="m4p_v1">
+                    <input type='hidden' name='clickid' value="{subid}">
+                    <input type='hidden' name='fbpxl' value="{p}">
+
+                    <button class="form__button">
+                        buy
+                    </button>
+                </form>
             </div>
         </section>
     </main>
