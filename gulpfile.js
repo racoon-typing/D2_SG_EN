@@ -31,11 +31,11 @@ const mainTasks = gulp.parallel(copy, video, php, js, html, styles);
 
 // Сценарий выполнения
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
-const zipBuild = gulp.series(reset, mainTasks, zip);
+const deployZIP = gulp.series(reset, mainTasks, zip);
 
 // Экспорт сценариев
 export { dev }
-export { zipBuild }
+export { deployZIP }
 
 // Выполнение сценария по умолчанию
 gulp.task('default', dev);

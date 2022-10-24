@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "gulp",
-    "zip": "gulp zipBuild"
+    "zip": "gulp deployZIP"
   },
   "repository": {
     "type": "git",
