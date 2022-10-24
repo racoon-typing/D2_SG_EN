@@ -5,7 +5,6 @@
         box-sizing: border-box;
         max-width: 500px;
         margin: 0 auto;
-        padding: 0 20px;
         padding-top: 60px;
         padding-bottom: 60px;
         border: 1px solid @bg-color-main;
@@ -32,14 +31,14 @@
             font-size: 20px;
             margin: 0;
             line-height: 24px;
-            text-align: center; 
-            color: red;  
+            text-align: center;
+            color: red;
         }
     }
 
     &__img {
         display: block;
-        width: 80%;
+        width: 360px;
         margin: 0 auto;
         margin-bottom: 30px;
     }
@@ -47,24 +46,50 @@
 
 @media (min-width: 768px) {
     .product {
+        padding-top: 0;
+
         &__wrapper {
-            display: flex;
-            flex-direction: column;
-            max-width: 1200px;
-            padding: 80px 30px;
+            max-width: 708px;
             padding-bottom: 40px;
+            border: none;
+
+            &--second {
+                display: grid;
+                grid-template-columns: 360px 1fr;
+                border: 1px solid @bg-color-main;
+                padding: 80px 10px;
+            }
         }
 
         &__title {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: @bg-color-fourth;
             font-size: 48px;
             line-height: 48px;
             margin-bottom: 30px;
         }
 
         &__text {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            padding: 20px 10px;
+            border-radius: 5px;
+            background-color: @bg-color-fourth;
             font-size: 24px;
             line-height: 28px;
             margin-bottom: 30px;
+        }
+
+        &__img {
+            width: 360px;
+            grid-column: 1 / 2;
+            grid-row: 1 / 4;
+            margin-bottom: 0;
         }
     }
 }
