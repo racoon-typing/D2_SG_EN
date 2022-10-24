@@ -17,6 +17,7 @@ import { copy } from './gulp/tasks/copy.js';
 import { js } from './gulp/tasks/js.js';
 import { video } from './gulp/tasks/video.js';
 import { php } from './gulp/tasks/php.js';
+import { zip } from './gulp/tasks/zip.js';
 
 
 // Наблюдатель за изменениями в файлах
@@ -30,6 +31,11 @@ const mainTasks = gulp.parallel(copy, video, php, js, html, styles);
 
 // Сценарий выполнения
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
+const zipBuild = gulp.series(reset, mainTasks, zip);
+
+// Экспорт сценариев
+export { dev }
+export { zipBuild }
 
 // Выполнение сценария по умолчанию
 gulp.task('default', dev);
