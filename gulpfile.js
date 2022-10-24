@@ -18,6 +18,7 @@ import { js } from './gulp/tasks/js.js';
 import { video } from './gulp/tasks/video.js';
 import { php } from './gulp/tasks/php.js';
 import { zip } from './gulp/tasks/zip.js';
+import { ftp } from './gulp/tasks/ftp.js';
 
 
 // Наблюдатель за изменениями в файлах
@@ -31,11 +32,13 @@ const mainTasks = gulp.parallel(copy, video, php, js, html, styles);
 
 // Сценарий выполнения
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
-const deployZIP = gulp.series(reset, mainTasks, zip);
+const deployZIP = gulp.series(reset, mainTasks, zip); 
+const deployFTP = gulp.series(reset, mainTasks, ftp); 
 
 // Экспорт сценариев
 export { dev }
 export { deployZIP }
+export { deployFTP }
 
 // Выполнение сценария по умолчанию
 gulp.task('default', dev);

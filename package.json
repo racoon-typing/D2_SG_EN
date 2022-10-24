@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "gulp",
-    "zip": "gulp deployZIP"
+    "zip": "gulp deployZIP",
+    "deploy": "gulp deployFTP"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
     "gulp-less": "^5.0.0",
     "gulp-notify": "^4.0.0",
     "gulp-plumber": "^1.2.1",
-    "gulp-zip": "^5.1.0"
+    "gulp-util": "^3.0.8",
+    "gulp-zip": "^5.1.0",
+    "vinyl-ftp": "^0.6.1"
   }
 }
