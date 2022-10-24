@@ -5,6 +5,10 @@
         display: block;
         width: 100%;
         height: auto;
+
+        &--second {
+            display: none;
+        }
     }
 
     &__wrapper {
@@ -78,6 +82,14 @@
 
 @media (min-width: 768px) {
     .offer {
+        &__bg-image {
+            display: none;
+    
+            &--second {
+                display: block;
+            }
+        }
+
         &__wrapper {
             display: flex;
             justify-content: center;
