@@ -10,7 +10,8 @@ export const path = {
         html: `${buildFolder}/`,
         img: `${buildFolder}/img/`,
         js: `${buildFolder}/`,
-        video: `${buildFolder}/video`
+        video: `${buildFolder}/video`,
+        php: `${buildFolder}/`
 
     },
     src: {
@@ -18,7 +19,8 @@ export const path = {
         html: `${srcFolder}/*.html`,
         img: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg}`,
         js: `${srcFolder}/**/*.js`,
-        video: `${srcFolder}/video/*.mp4`
+        video: `${srcFolder}/video/*.mp4`,
+        php: `${srcFolder}/*.php`
     },
     watch: {
         html: `${srcFolder}/*.html`,
