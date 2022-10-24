@@ -102,7 +102,6 @@
             &--second {
                 border: none;
                 padding: 0;
-                background-image: url("../img/content-photo/bg-image-4.jpg");
                 width: 400px;
                 height: 400px;
                 display: flex;
@@ -110,6 +109,26 @@
                 justify-content: center;
             }
         }
+
+        &__link {
+            display: block;
+            background-image: url("../img/content-photo/bg-image-4.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+
+            &:hover {
+                background-image: none;
+            }
+
+            &:hover .product__wrapper--second {
+                background: linear-gradient(to bottom right, white 30%, @bg-color-fourth);
+            }
+
+            &:hover .product__img {
+                display: block;
+            }
+        }
+
 
         &__img {
             display: none;

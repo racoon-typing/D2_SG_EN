@@ -81,6 +81,31 @@
         &__wrapper {
             max-width: 1440px;
             padding: 100px 110px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 30px;
+        }
+
+        &__title {
+            margin: 0;
+            grid-column: 1 / 2;
+        }
+
+        &__text {
+            margin: 0;
+            grid-column: 1 / 2;
+        }
+
+        &__button {
+            grid-column: 1 / 2;
+            margin-top: 0;
+            width: 220px;
+            height: 55px;
+        }
+
+        &__video {
+            grid-column: 2 / 3;
+            grid-row: 1 / 4;
         }
     }
 }
