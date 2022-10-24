@@ -4,10 +4,10 @@ import zipPlugin from "gulp-zip";
 export const zip = () => {
     del(`./$(app.path.rootFolder).zip`);
     return app.gulp.src(`${app.path.builFoilder}/**/*.*`, {})
-        .pipe(app.gulp.plumber(
+        .pipe(app.plugins.plumber(
             app.plugins.notify.onError({
                 title: "ZIP",
-                message: "Erorr <%= error.message%>"
+                message: "Error: <% error.message %>"
             })
         ))
         .pipe(zipPlugin(`${app.path.rootFolder}.zip`))
