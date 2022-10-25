@@ -80,7 +80,7 @@
 }
 .main-header__button-nav::before {
   position: absolute;
-  content: url("../../img/icons/burger.svg");
+  content: url("../img/icons/burger.svg");
   width: 24px;
   height: 20px;
   top: 0;
