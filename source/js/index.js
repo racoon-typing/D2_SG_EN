@@ -7,7 +7,6 @@ if (buttonNav) {
         navNode.classList.toggle('main-header__nav--open');
 
         if (navNode.classList.contains('main-header__nav--open')) {
-            console.log('есть');
             buttonNav.classList.remove('main-header__button-nav');
             buttonNav.classList.add('main-header__button-nav--cross');
         } else {
