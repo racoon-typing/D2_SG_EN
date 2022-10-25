@@ -661,31 +661,31 @@
   left: 0;
 }
 .research__item:nth-child(1)::before {
-  background-image: url('../../img/content-photo/icons/scales.svg');
+  background-image: url('../img/content-photo/icons/scales.svg');
   background-position: left;
   background-repeat: no-repeat;
   z-index: 2;
 }
 .research__item:nth-child(2)::before {
-  background-image: url('../../img/content-photo/icons/burger.svg');
+  background-image: url('../img/content-photo/icons/burger.svg');
   background-position: left;
   background-repeat: no-repeat;
   z-index: 2;
 }
 .research__item:nth-child(3)::before {
-  background-image: url('../../img/content-photo/icons/tablet.svg');
+  background-image: url('../img/content-photo/icons/tablet.svg');
   background-position: left;
   background-repeat: no-repeat;
   z-index: 2;
 }
 .research__item:nth-child(4)::before {
-  background-image: url('../../img/content-photo/icons/lightning.svg');
+  background-image: url('../img/content-photo/icons/lightning.svg');
   background-position: left;
   background-repeat: no-repeat;
   z-index: 2;
 }
 .research__item:nth-child(5)::before {
-  background-image: url('../../img/content-photo/icons/hand.svg');
+  background-image: url('../img/content-photo/icons/hand.svg');
   background-position: left;
   background-repeat: no-repeat;
   z-index: 2;
