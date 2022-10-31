@@ -1,6 +1,4 @@
-.instruction {
-    background-color: @bg-color-fourth;
-
+.use {
     &__wrapper {
         box-sizing: border-box;
         max-width: 500px;
@@ -12,10 +10,13 @@
 
     &__title {
         margin: 0;
-        font-family: 'Oswald';
         font-size: 36px;
         line-height: 40px;
         margin-bottom: 20px;
+
+        &--second {
+            color: @color-second;
+        }
     }
 
     &__text {
@@ -44,18 +45,20 @@
         }
 
         &:hover {
-            color: @color-main;
-            background-color: #ffffff;
+            color: #ffffff;
+            background-color: black;
         }
 
         &:active {
-            outline: 1px solid @color-main;
+            background-color: #ffffff;
+            color: black;
+            outline: 1px solid black;
         }
     }
 }
 
 @media (min-width: 768px) {
-    .instruction {
+    .use {
         &__wrapper {
             max-width: 1200px;
             padding: 80px 30px;
@@ -81,7 +84,7 @@
 }
 
 @media (min-width: 1200px) {
-    .instruction {
+    .use {
         &__wrapper {
             max-width: 1440px;
             padding: 100px 110px;
@@ -91,13 +94,19 @@
         }
 
         &__title {
-            margin: 0;
+            margin-bottom: 30px;
             grid-column: 1 / 2;
         }
 
         &__text {
-            margin: 0;
+            margin-bottom: 20px;
+            line-height: 32px;
             grid-column: 1 / 2;
+
+            &--second {
+                margin-bottom: 0;
+                color: @color-second;
+            }
         }
 
         &__button {
@@ -105,6 +114,11 @@
             margin-top: 0;
             width: 220px;
             height: 55px;
+            margin-top: 40px;
+
+            &-text {
+                margin: 0;
+            }
         }
     }
 }

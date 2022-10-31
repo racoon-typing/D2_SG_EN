@@ -208,7 +208,7 @@
     margin-right: 10px;
     border-bottom: 1px solid #000000;
   }
-  .main-header__item__text {
+  .main-header__item-text {
     font-size: 18px;
     line-height: 18px;
   }
@@ -1392,10 +1392,7 @@
     display: none;
   }
 }
-.instruction {
-  background-color: #e8e8e8;
-}
-.instruction__wrapper {
+.use__wrapper {
   box-sizing: border-box;
   max-width: 500px;
   margin: 0 auto;
@@ -1403,18 +1400,20 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.instruction__title {
+.use__title {
   margin: 0;
-  font-family: 'Oswald';
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 20px;
 }
-.instruction__text {
+.use__title--second {
+  color: #df6092;
+}
+.use__text {
   margin: 0;
   margin-bottom: 15px;
 }
-.instruction__button {
+.use__button {
   color: #ffffff;
   background-color: #1877f2;
   border: none;
@@ -1430,30 +1429,32 @@
   width: 140px;
   height: 40px;
 }
-.instruction__button-text {
+.use__button-text {
   margin: 0;
 }
-.instruction__button:hover {
-  color: #1877f2;
-  background-color: #ffffff;
+.use__button:hover {
+  color: #ffffff;
+  background-color: black;
 }
-.instruction__button:active {
-  outline: 1px solid #1877f2;
+.use__button:active {
+  background-color: #ffffff;
+  color: black;
+  outline: 1px solid black;
 }
 @media (min-width: 768px) {
-  .instruction__wrapper {
+  .use__wrapper {
     max-width: 1200px;
     padding: 80px 30px;
   }
-  .instruction__title {
+  .use__title {
     font-size: 48px;
     line-height: 48px;
   }
-  .instruction__text {
+  .use__text {
     font-size: 24px;
     line-height: 28px;
   }
-  .instruction__button {
+  .use__button {
     font-size: 18px;
     line-height: 24px;
     width: 200px;
@@ -1461,7 +1462,7 @@
   }
 }
 @media (min-width: 1200px) {
-  .instruction__wrapper {
+  .use__wrapper {
     max-width: 1440px;
     padding: 100px 110px;
     display: grid;
@@ -1469,18 +1470,27 @@
     -moz-column-gap: 30px;
          column-gap: 30px;
   }
-  .instruction__title {
-    margin: 0;
+  .use__title {
+    margin-bottom: 30px;
     grid-column: 1 / 2;
   }
-  .instruction__text {
-    margin: 0;
+  .use__text {
+    margin-bottom: 20px;
+    line-height: 32px;
     grid-column: 1 / 2;
   }
-  .instruction__button {
+  .use__text--second {
+    margin-bottom: 0;
+    color: #df6092;
+  }
+  .use__button {
     grid-column: 1 / 2;
     margin-top: 0;
     width: 220px;
     height: 55px;
+    margin-top: 40px;
+  }
+  .use__button-text {
+    margin: 0;
   }
 }
