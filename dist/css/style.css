@@ -1278,6 +1278,7 @@
   }
   .compound__list {
     display: flex;
+    overflow-x: scroll;
   }
   .compound__item {
     width: 270px;
