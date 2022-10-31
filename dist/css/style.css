@@ -1399,6 +1399,7 @@
   padding: 0 20px;
   padding-top: 40px;
   padding-bottom: 40px;
+  border-bottom: 1px solid black;
 }
 .use__title {
   margin: 0;
@@ -1412,6 +1413,10 @@
 .use__text {
   margin: 0;
   margin-bottom: 15px;
+}
+.use__img {
+  display: block;
+  width: 100%;
 }
 .use__button {
   color: #ffffff;
@@ -1453,6 +1458,9 @@
   .use__text {
     font-size: 24px;
     line-height: 28px;
+  }
+  .use__img {
+    width: 600px;
   }
   .use__button {
     font-size: 18px;
