@@ -1554,7 +1554,7 @@
   font-family: 'Oswald';
   font-size: 36px;
   line-height: 40px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .question__sub-title {
   margin: 0;
@@ -1567,27 +1567,40 @@
   list-style-type: none;
   margin-top: 30px;
 }
+.question__item {
+  margin-bottom: 15px;
+}
 .question__item-summary-icon {
   position: absolute;
   content: '';
   width: 11px;
   height: 20px;
   top: calc(50% - 9.5px);
-  left: 10px;
+  left: 15px;
   rotate: 90deg;
 }
 .question__item-summary-text {
+  font-size: 14px;
+  line-height: 20px;
   margin: 0;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
 }
 .question__item-details {
   border: 1px solid black;
   border-radius: 5px;
+  background-color: #ffffff;
 }
 .question__item summary {
   position: relative;
   list-style: none;
   padding: 10px 0;
   padding-left: 40px;
+  font-size: 14px;
+  line-height: normal;
+}
+.question__item details[open] .question__item-summary-icon {
+  rotate: -90deg;
 }
 @media (min-width: 768px) {
   .question__wrapper {
