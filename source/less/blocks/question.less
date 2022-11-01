@@ -74,6 +74,37 @@
         rotate: -90deg;
     }
 
+    &__button {
+        color: #ffffff;
+        background-color: #1877f2;
+        border: none;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        height: 40px;
+
+        &-text {
+            margin: 0;
+        }
+
+        &:hover {
+            color: #ffffff;
+            background-color: black;
+        }
+
+        &:active {
+            background-color: #ffffff;
+            color: black;
+            outline: 1px solid black;
+        }
+    }
 }
 
 @media (min-width: 768px) {

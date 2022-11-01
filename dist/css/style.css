@@ -1602,6 +1602,34 @@
 .question__item details[open] .question__item-summary-icon {
   rotate: -90deg;
 }
+.question__button {
+  color: #ffffff;
+  background-color: #1877f2;
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 40px;
+}
+.question__button-text {
+  margin: 0;
+}
+.question__button:hover {
+  color: #ffffff;
+  background-color: black;
+}
+.question__button:active {
+  background-color: #ffffff;
+  color: black;
+  outline: 1px solid black;
+}
 @media (min-width: 768px) {
   .question__wrapper {
     display: flex;
