@@ -32,14 +32,25 @@
     }
 
     &__item {
-        &-summary-icon {
-            position: absolute;
-            content: '';
-            width: 11px;
-            height: 20px;
-            top: calc(50% - 9.5px);
-            left: 10px;
-            rotate: 90deg;
+        &-summary {
+            &-icon {
+                position: absolute;
+                content: '';
+                width: 11px;
+                height: 20px;
+                top: calc(50% - 9.5px);
+                left: 10px;
+                rotate: 90deg;
+            }
+
+            &-text {
+                margin: 0;
+            }
+        }
+
+        &-details {
+            border: 1px solid black;
+            border-radius: 5px;
         }
     }
 
@@ -51,9 +62,9 @@
     }
 
 
-   
 
-    
+
+
 }
 
 @media (min-width: 768px) {

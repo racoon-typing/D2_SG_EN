@@ -1576,6 +1576,13 @@
   left: 10px;
   rotate: 90deg;
 }
+.question__item-summary-text {
+  margin: 0;
+}
+.question__item-details {
+  border: 1px solid black;
+  border-radius: 5px;
+}
 .question__item summary {
   position: relative;
   list-style: none;
