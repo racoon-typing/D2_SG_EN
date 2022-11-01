@@ -134,8 +134,8 @@
 @media (min-width: 768px) {
     .image-slider {
         &__wrapper-item {
-            display: grid;
-            grid-template-columns: 40% 60%;
+            // display: grid;
+            // grid-template-columns: 40% 60%;
         }
 
         &__column-left {
@@ -145,6 +145,11 @@
         &__img {
             width: 200px;
             height: 200px;
+
+            &--comment {
+                width: 400px;
+                height: 400px;
+            }
         }
 
         &__column-right {
@@ -152,8 +157,10 @@
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            padding-left: 15px;
-            border-left: 1px solid #000000;
+            margin-top: 30px;
+            padding-left: 10px;
+            margin-left: 10px;
+            border-left: 1px solid black;
         }
 
         &__title {
@@ -168,7 +175,8 @@
         }
 
         &__slide {
-            padding: 80px 40px;
+            padding: 40px;
+            padding-bottom: 60px;
         }
     }
 

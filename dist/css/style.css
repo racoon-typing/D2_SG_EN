@@ -987,7 +987,7 @@
 @media (min-width: 768px) {
   .review__wrapper {
     max-width: 708px;
-    padding: 80px 30px;
+    padding: 60px 30px;
     margin: 0 auto;
   }
 }
@@ -1204,10 +1204,6 @@
   display: none;
 }
 @media (min-width: 768px) {
-  .image-slider__wrapper-item {
-    display: grid;
-    grid-template-columns: 40% 60%;
-  }
   .image-slider__column-left {
     margin-bottom: 0;
   }
@@ -1215,13 +1211,19 @@
     width: 200px;
     height: 200px;
   }
+  .image-slider__img--comment {
+    width: 400px;
+    height: 400px;
+  }
   .image-slider__column-right {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding-left: 15px;
-    border-left: 1px solid #000000;
+    margin-top: 30px;
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px solid black;
   }
   .image-slider__title {
     font-size: 28px;
@@ -1233,7 +1235,8 @@
     text-align: left;
   }
   .image-slider__slide {
-    padding: 80px 40px;
+    padding: 40px;
+    padding-bottom: 60px;
   }
   .image-slider .swiper-pagination-bullet {
     width: 15px;
@@ -1392,7 +1395,7 @@
   }
   .product__wrapper {
     max-width: 708px;
-    padding-bottom: 40px;
+    padding: 40px 0;
     border: none;
   }
   .product__wrapper--second {
@@ -1632,6 +1635,9 @@
 .question__item {
   margin-bottom: 15px;
 }
+.question__item:last-child {
+  margin-bottom: 0;
+}
 .question__item-summary-icon {
   position: absolute;
   content: '';
@@ -1640,6 +1646,10 @@
   top: calc(50% - 9.5px);
   left: 15px;
   rotate: 90deg;
+}
+.question__item-summary-title {
+  font-size: 14px;
+  line-height: normal;
 }
 .question__item-summary-text {
   font-size: 14px;
@@ -1658,6 +1668,7 @@
   list-style: none;
   padding: 10px 0;
   padding-left: 40px;
+  padding-right: 20px;
   font-size: 14px;
   line-height: normal;
 }
@@ -1698,12 +1709,30 @@
     flex-direction: column;
     max-width: 1200px;
     padding: 80px 30px;
-    padding-bottom: 40px;
   }
   .question__title {
     font-size: 48px;
     line-height: 48px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+  }
+  .question__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .question__item-summary-title {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .question__item-summary-text {
+    min-height: 110px;
+    font-size: 16px;
+    line-height: normal;
+  }
+  .question__item summary {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
   }
 }
 @media (min-width: 1200px) {
