@@ -1498,6 +1498,9 @@
     line-height: 48px;
     margin-bottom: 30px;
   }
+  .product__title::after {
+    display: none;
+  }
   .product__text {
     display: flex;
     align-self: center;
