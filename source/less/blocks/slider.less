@@ -23,6 +23,12 @@
         justify-content: center;
         align-items: center;
         position: relative;
+        margin-bottom: 30px;
+    }
+
+    &__wrapper-text {
+        width: 100%;
+
     }
 
     &__column-left {
@@ -68,7 +74,7 @@
     }
 
     &__before {
-        left: 0;
+        left: -20px;
         z-index: 1;
 
         &::before {
@@ -85,7 +91,7 @@
     }
 
     &__after {
-        right: 0;
+        right: -20px;
         z-index: 1;
 
         &::before {
@@ -120,8 +126,8 @@
 
 .image-slider--comment .swiper {
     &-pagination-bullet {
-        width: 30px;
-        height: 30px;
+        width: 15px;
+        height: 15px;
     }
 
     &-button-prev,
@@ -130,9 +136,21 @@
     }
 }
 
+.image-slider--comment .image-slider{
+    &__text {
+        font-size: 18px;
+        line-height: normal;
+    }
+}
+
 
 @media (min-width: 768px) {
     .image-slider {
+        &__wrapper-item {
+            width: 400px;
+            margin: 0 auto;
+        }
+
         &__column-left {
             margin-bottom: 0;
         }
@@ -175,11 +193,11 @@
         }
 
         &__before {
-            left: 50px;
+            left: -25px;
         }
 
         &__after {
-            right: 50px;
+            right: -25px;
         }
     }
 
@@ -187,6 +205,13 @@
         &-pagination-bullet {
             width: 15px;
             height: 15px;
+        }
+    }
+
+    .image-slider--comment .swiper {
+        &-pagination-bullet {
+            width: 20px;
+            height: 20px;
         }
     }
 }
