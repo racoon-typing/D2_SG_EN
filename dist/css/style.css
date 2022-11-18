@@ -237,7 +237,13 @@
   box-sizing: border-box;
   margin: 0 auto;
   color: #ffffff;
-  padding: 20px;
+  padding: 40px 20px;
+}
+.main-footer__author {
+  text-align: center;
+  font-size: 14px;
+  line-height: normal;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .main-footer__wrapper {
