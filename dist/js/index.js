@@ -1,5 +1,7 @@
 let buttonNav = document.querySelector('.main-header__button-nav');
 let navNode = document.querySelector('.main-header__nav');
+let itemNavNode = document.querySelectorAll('.main-header__item');
+
 
 if (buttonNav) {
     buttonNav.addEventListener('click', function () {
@@ -15,6 +17,18 @@ if (buttonNav) {
         }
     });
 }
+
+if (itemNavNode) {
+    for (let i = 0; i < itemNavNode.length; i++) {
+        itemNavNode[i].addEventListener('click', function () {
+            navNode.classList.remove('main-header__nav--open');
+            navNode.classList.add('main-header__nav--close');
+            buttonNav.classList.remove('main-header__button-nav--cross');
+            buttonNav.classList.add('main-header__button-nav');
+        })
+    }
+}
+
 
 
 // Инициализируем слайдер 
@@ -34,5 +48,15 @@ new Swiper('.image-slider', {
         dynamicBullets: true,
     },
     // Отступ между слайдами
-    spaceBetween: 30,
+    spaceBetween: 50,
+    // Эффект переключения слайдов
+    // effect: 'cube',
+    // // Дополнение к cube
+    // cubeEffect : {
+    //     // Настройки тени
+    //     slideShadows: true,
+    //     shadow: true,
+    //     shadowOffset: 20,
+    //     shadowScale: 0.94 
+    // }
 });
