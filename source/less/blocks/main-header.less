@@ -1,6 +1,9 @@
 .main-header {
+    position: fixed;
     width: 100%;
-    background-color: #e8e8e8;
+    // background-color: #e8e8e8;
+    background-color: #ffffff;
+    z-index: 12;
 
     &__wrapper {
         box-sizing: border-box;
@@ -30,16 +33,16 @@
     }
 
     &__button-buy {
-        font-family: @second-font;
         font-style: normal;
         text-align: center;
         text-transform: uppercase;
-        font-weight: 400;
         font-size: 14px;
         line-height: 18px;
-        color: #ffffff;
-        background-color: @bg-color-main;
-        border: none;
+        color: #000000;
+        border: 1px solid black;
+        border-radius: 10px;
+        // color: #ffffff;
+        // background-color: @bg-color-main;
         padding: 10px 60px;
         font-weight: 700;
         letter-spacing: 1px;
@@ -117,14 +120,30 @@
         z-index: 1;
     }
     
-    &__nav--close {
-        display: none;
+    &__nav {
+        &--open {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            min-height: 100vh;
+            top: 68px;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        &--close {
+            display: none;
+        }
     }
 
     &__list {
+        width: 100%;
         margin: 0;
         padding: 0;
         list-style-type: none;
+        position: absolute;
+        background-color: #ffffff;
     }
 
     &__item {
@@ -163,6 +182,11 @@
             padding: 20px 30px;
         }
 
+        &__wrapper-logo {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #000000;
+        }
+
         &__logo {
             font-size: 24px;
             line-height: 28px;
@@ -185,6 +209,7 @@
             display: flex;
             justify-content: space-between;
             border-bottom: 1px solid #000000;
+            position: relative;
         }
 
         &__item {
@@ -199,17 +224,18 @@
         &__wrapper {
             position: relative;
             max-width: 1440px;
-            padding: 40px 110px;
+            padding: 15px 110px;
         }
 
         &__wrapper-logo {
             min-height: 67px;
             border: none;
+            padding-bottom: 0;
         }
 
         &__nav {
             position: absolute;
-            top: 41px;
+            top: 15px;
             right: 26%;
         }
 
@@ -219,6 +245,7 @@
 
         &__item {
             width: 125px;
+            min-height: 66px;
             margin-right: 10px;
             border-bottom: 1px solid #000000;
 

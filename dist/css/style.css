@@ -21,8 +21,10 @@
   overflow: hidden;
 }
 .main-header {
+  position: fixed;
   width: 100%;
-  background-color: #e8e8e8;
+  background-color: #ffffff;
+  z-index: 12;
 }
 .main-header__wrapper {
   box-sizing: border-box;
@@ -48,15 +50,15 @@
   align-items: center;
 }
 .main-header__button-buy {
-  font-family: 'Oswald';
   font-style: normal;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
-  background-color: #1877f2;
+  color: #000000;
+  border: 1px solid black;
+  border-radius: 10px;
   border: none;
   padding: 10px 60px;
   font-weight: 700;
@@ -125,13 +127,26 @@
   background-repeat: no-repeat;
   z-index: 1;
 }
+.main-header__nav--open {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  top: 68px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
 .main-header__nav--close {
   display: none;
 }
 .main-header__list {
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  position: absolute;
+  background-color: #ffffff;
 }
 .main-header__item {
   display: flex;
@@ -161,6 +176,10 @@
     box-sizing: border-box;
     padding: 20px 30px;
   }
+  .main-header__wrapper-logo {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000000;
+  }
   .main-header__logo {
     font-size: 24px;
     line-height: 28px;
@@ -179,6 +198,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #000000;
+    position: relative;
   }
   .main-header__item {
     width: 160px;
@@ -189,15 +209,16 @@
   .main-header__wrapper {
     position: relative;
     max-width: 1440px;
-    padding: 40px 110px;
+    padding: 15px 110px;
   }
   .main-header__wrapper-logo {
     min-height: 67px;
     border: none;
+    padding-bottom: 0;
   }
   .main-header__nav {
     position: absolute;
-    top: 41px;
+    top: 15px;
     right: 26%;
   }
   .main-header__list {
@@ -205,6 +226,7 @@
   }
   .main-header__item {
     width: 125px;
+    min-height: 66px;
     margin-right: 10px;
     border-bottom: 1px solid #000000;
   }
@@ -310,7 +332,8 @@
   }
 }
 .offer {
-  background-color: #e8e8e8;
+  background-color: #99CCFF;
+  padding-top: 69px;
 }
 .offer__bg-image {
   display: block;
@@ -389,6 +412,9 @@
   outline: 1px solid #1877f2;
 }
 @media (min-width: 768px) {
+  .offer {
+    padding-top: 162px;
+  }
   .offer__bg-image {
     display: none;
   }
@@ -545,6 +571,9 @@
     padding: 40px 110px;
     padding-bottom: 100px;
   }
+  .benefit__title {
+    margin-bottom: 30px;
+  }
   .benefit__text {
     line-height: 32px;
   }
@@ -557,7 +586,7 @@
   }
 }
 .instruction {
-  background-color: #e8e8e8;
+  background-color: #99CCFF;
 }
 .instruction__wrapper {
   box-sizing: border-box;
@@ -640,6 +669,7 @@
   .instruction__title {
     margin: 0;
     grid-column: 1 / 2;
+    margin-bottom: 30px;
   }
   .instruction__text {
     margin: 0;
@@ -777,14 +807,21 @@
     max-width: 1440px;
     padding: 100px 110px;
   }
+  .research__title {
+    margin-bottom: 30px;
+  }
   .research__list {
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
   }
   .research__item {
-    padding-left: 0;
-    width: 18%;
+    padding: 10px;
+    width: 17%;
     margin-bottom: 0;
+    border-radius: 10px;
+    border: 1px solid rgba(206, 209, 213, 0.4);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.05);
   }
   .research__item-icon-wrapper {
     display: flex;
@@ -1312,7 +1349,7 @@
   }
 }
 .compound {
-  background-color: #e8e8e8;
+  background-color: #99CCFF;
 }
 .compound__wrapper {
   box-sizing: border-box;
@@ -1499,7 +1536,7 @@
     justify-content: center;
     padding: 10px;
     border-radius: 5px;
-    background-color: #e8e8e8;
+    background-color: #99CCFF;
     font-size: 48px;
     line-height: 48px;
     margin-bottom: 30px;
@@ -1513,7 +1550,7 @@
     justify-content: center;
     padding: 20px 10px;
     border-radius: 5px;
-    background-color: #e8e8e8;
+    background-color: #99CCFF;
     font-size: 24px;
     line-height: 28px;
     margin-bottom: 30px;
@@ -1548,7 +1585,7 @@
     background-image: none;
   }
   .product__link:hover .product__wrapper--second {
-    background: linear-gradient(to bottom right, white 30%, #e8e8e8);
+    background: linear-gradient(to bottom right, white 30%, #99CCFF);
   }
   .product__link:hover .product__img {
     display: block;
@@ -1696,7 +1733,7 @@
   }
 }
 .question {
-  background-color: #e8e8e8;
+  background-color: #99CCFF;
 }
 .question__wrapper {
   box-sizing: border-box;
@@ -1840,7 +1877,7 @@
   }
 }
 .comment {
-  background-color: #e8e8e8;
+  background-color: #99CCFF;
 }
 .comment__wrapper {
   box-sizing: border-box;
