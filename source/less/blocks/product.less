@@ -65,6 +65,41 @@
         display: none;
     }
 
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        min-height: 40px;
+        color: #ffffff;
+        background-color: #1877f2;
+        border: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 0;
+        border-radius: 10px;
+
+        &:hover {
+            background-color: #166fe5;
+        }
+
+        &:active {
+            background-color: #29487d;
+            transform: scale(0.95);
+        }
+
+        &-wrappper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+    }
+
     &__img {
         display: block;
         width: 360px;
