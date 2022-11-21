@@ -55,14 +55,19 @@ window.addEventListener("load", callbackHide);
 
 // Купить 
 let buttonBuy = document.querySelector('.main-header__button-buy');
+let buttonBuyProduct = document.querySelector('.product__link');
 let buttonFormClose = document.querySelector('.popup-form__wrapper-button');
 let popupForm = document.querySelector('.popup-form');
 let pageBody = document.querySelector('.page__body');
 
-buttonBuy.addEventListener('click', function () {
+function openPopupForm() {
     popupForm.classList.remove('popup-form--close');
     pageBody.style.overflow = 'hidden';
-});
+};
+
+buttonBuyProduct.addEventListener('click', openPopupForm);
+buttonBuy.addEventListener('click', openPopupForm);
+
 
 buttonFormClose.addEventListener('click', function () {
     popupForm.classList.add('popup-form--close');
