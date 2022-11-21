@@ -1049,7 +1049,7 @@
   display: block;
   width: 100%;
   margin-top: 25px;
-  min-height: 40px;
+  min-height: 50px;
   color: #ffffff;
   background-color: #1877f2;
   border: none;
@@ -1059,6 +1059,7 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 0;
+  border-radius: 10px;
 }
 .form__button:hover {
   background-color: #166fe5;
@@ -1486,7 +1487,7 @@
   align-items: center;
   justify-content: center;
   width: 300px;
-  min-height: 40px;
+  min-height: 50px;
   color: #ffffff;
   background-color: #1877f2;
   border: none;
@@ -1497,6 +1498,7 @@
   text-transform: uppercase;
   text-decoration: none;
   padding: 0;
+  border-radius: 10px;
 }
 .product__link:hover {
   background-color: #166fe5;
