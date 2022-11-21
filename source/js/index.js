@@ -1,7 +1,7 @@
+// Меню
 let buttonNav = document.querySelector('.main-header__button-nav');
 let navNode = document.querySelector('.main-header__nav');
 let itemNavNode = document.querySelectorAll('.main-header__item');
-
 
 if (buttonNav) {
     buttonNav.addEventListener('click', function () {
@@ -30,6 +30,43 @@ if (itemNavNode) {
 }
 
 
+// Скрывает меню при прокрутке на Планшете
+function callbackHide() {
+    if (document.documentElement.clientWidth >= 768 && document.documentElement.clientWidth < 1200) {
+        console.log(document.documentElement.clientWidth);
+
+        var lastScrollTop = 0;
+        window.addEventListener('scroll', (event) => {
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop) {
+                // downscroll code
+                navNode.classList.add('main-header__nav--tablet-down');
+            } else {
+                // upscroll code
+                navNode.classList.remove('main-header__nav--tablet-down');
+            }
+            lastScrollTop = st;
+        });
+    }
+}
+
+window.addEventListener("load", callbackHide);
+
+// На изменение ширины
+// window.addEventListener("resize", (event) => {}); 
+
+var lastScrollTop = 0;
+$(window).scroll(function (event) {
+    var st = $(this).scrollTop();
+    if (st > lastScrollTop) {
+        // downscroll code
+        navNode.classList.add('main-header__nav--tablet-down');
+    } else {
+        // upscroll code
+        navNode.classList.remove('main-header__nav--tablet-down');
+    }
+    lastScrollTop = st;
+});
 
 // Инициализируем слайдер 
 new Swiper('.image-slider', {

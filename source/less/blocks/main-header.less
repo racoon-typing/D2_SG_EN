@@ -4,6 +4,7 @@
     // background-color: #e8e8e8;
     background-color: #ffffff;
     z-index: 12;
+    box-shadow: 0 8px 20px 0 rgb(0 0 0 / 5%);
 
     &__wrapper {
         box-sizing: border-box;
@@ -117,7 +118,7 @@
         background-repeat: no-repeat;
         z-index: 1;
     }
-    
+
     &__nav {
         &--open {
             position: absolute;
@@ -202,6 +203,12 @@
 
         &__nav {
             display: block;
+
+            &--tablet {
+                &-down {
+                    display: none;
+                }
+            }
         }
 
         &__list {
@@ -233,6 +240,7 @@
         }
 
         &__nav {
+            display: block;
             position: absolute;
             top: 15px;
             right: 26%;
