@@ -1535,6 +1535,9 @@
   }
 }
 @media (min-width: 1200px) {
+  .product {
+    padding: 0;
+  }
   .product__wrapper {
     max-width: 1440px;
     padding: 100px 110px;
@@ -1889,6 +1892,20 @@
   }
 }
 @media (min-width: 1200px) {
+  .question__wrapper {
+    max-width: 1440px;
+    min-height: 800px;
+    padding: 100px 110px;
+  }
+  .question__title {
+    margin-bottom: 30px;
+  }
+  .question__list {
+    margin-top: 50px;
+  }
+  .question__item {
+    margin-bottom: 0;
+  }
   .question__text {
     line-height: 32px;
     margin-bottom: 0;
