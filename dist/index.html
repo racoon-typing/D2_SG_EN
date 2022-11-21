@@ -23,7 +23,7 @@
                     Dietica
                 </a>
                 <div class="main-header__wrapper-button">
-                    <a class="main-header__button-buy" href="#buy">Order</a>
+                    <a class="main-header__button-buy" href="#">Order</a>
                     <button class="main-header__button-nav">
                         <span class="visually-hidden">Menu</span>
                     </button>
@@ -1635,20 +1635,55 @@
             <div class="product__wrapper">
                 <a class="product__link">
                     <div class="product__wrapper--second">
-                        <h2 class="product__title">
-                            Sale 50%
-                        </h2>
+                        <div class="product__title-wrapper">
+                            <h2 class="product__title">
+                                Sale 50%
+                            </h2>
+                        </div>
 
                         <img src="./img/content-photo/product-1.png" alt="" class="product__img" width="360"
                             height="360">
 
                         <p class="product__text">
-                            Now you can get Dietica cheaper with a 50% discount
+                            How can you buy Dietica cheaper? with 50% discount
                         </p>
 
-                        <p class="product__text-date">
-                            This promotion is valid until <b><span class="data"></span></b>.
-                        </p>
+                        <ul class="product__list">
+                            <!-- 1 -->
+                            <li class="product__item">
+                                <span class="product__item-number">
+                                    1. 
+                                </span>
+                                Fill in the form below
+                            </li>
+                            <!-- 2 -->
+                            <li class="product__item">
+                                <span class="product__item-number">
+                                    2. 
+                                </span>
+                                Сonsultant will contact you
+                            </li>
+                            <!-- 3 -->
+                            <li class="product__item">
+                                <span class="product__item-number">
+                                    3. 
+                                </span>
+                                Tell the consultant your address
+                            </li>
+                            <!-- 4 -->
+                            <li class="product__item">
+                                <span class="product__item-number">
+                                    4. 
+                                </span>
+                                Confirm the order
+                            </li>
+                        </ul>
+
+                        <div class="product__text-date-wrapper">
+                            <p class="product__text-date">
+                                This promotion is valid until <b><span class="data"></span></b>.
+                            </p>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -1781,6 +1816,39 @@
                 </form>
             </div>
         </section>
+
+        <div class="popup-form popup-form--close">
+            <div class="popup-form__wrapper">
+                <h2 class="popup-form__title">
+                    Order form
+                </h2>
+
+                <div class="popup-form__wrapper-button-wrapper">
+                    <a class="popup-form__wrapper-button"></a>
+                </div>
+
+                <form id="form2" action="lemon.php?p={p}" method="POST" class="wv_order-form">
+                    <div class="form__container-input">
+                        <input id="name1" name="name" type="text" class="form__input form__input--name"
+                            placeholder="Name:" required>
+
+                        <input id="phone1" name="phone" type="tel" class="form__input form__input--phone"
+                            placeholder="+65 1234 5678" autocomplete="off" data-intl-tel-input-id="0" required>
+                    </div>
+
+                    <!-- Скрытые поля -->
+                    <input type='hidden' name='sub1' value="{subid}">
+                    <input type='hidden' name='sub2' value="{p}">
+                    <input type='hidden' name='sub3' value="m4p_v1">
+                    <input type='hidden' name='clickid' value="{subid}">
+                    <input type='hidden' name='fbpxl' value="{p}">
+
+                    <button class="form__button">
+                        Order
+                    </button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="main-footer">
