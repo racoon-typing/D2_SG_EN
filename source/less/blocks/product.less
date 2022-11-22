@@ -142,6 +142,10 @@
             &::after {
                 display: none;
             }
+
+            &-wrapper {
+                margin-bottom: 40px;
+            }
         }
 
         &__text {
@@ -153,14 +157,29 @@
             background-color: @bg-color-fourth;
             font-size: 24px;
             line-height: 28px;
-            margin-bottom: 30px;
+            margin-bottom: 30px; 
+
+            &-date-wrapper {
+                grid-column: 2 / 3;
+                grid-row: 4 / 5;
+            }
+        }
+
+        &__link {
+            width: 100%;
         }
 
         &__img {
             width: 360px;
-            grid-column: 1 / 2;
-            grid-row: 1 / 4;
             margin-bottom: 0;
+
+            &-wrapper {
+                grid-column: 1 / 2;
+                grid-row: 1 / 5;
+                min-height: 400px;
+                display: flex;
+                align-items: center;
+            }
         }
     }
 }
@@ -184,6 +203,10 @@
         &__img {
             width: 400px;
             height: auto;
+
+            &-wrapper {
+                grid-row: 1 / 5;
+            }
         }
 
         &__title {
@@ -198,11 +221,13 @@
             }
 
             &-wrapper {
-                grid-row: 4 / 5;
+                grid-column: 1 / 2;
+                grid-row: 5 / 6;
                 margin-top: 30px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin: 0;
             }
         }
 
@@ -223,6 +248,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    grid-row: 5 / 6;
                 }
             }
         }
@@ -233,6 +259,7 @@
             margin: 0;
             list-style-type: none;
             grid-row: 2 / 4;
+            margin-bottom: 30px;
         }
 
         &__item {
@@ -267,6 +294,11 @@
                     z-index: -1;
                 }
             }
+        }
+
+        &__link {
+            grid-row: 4 / 5;
+            width: 300px;
         }
     }
 
